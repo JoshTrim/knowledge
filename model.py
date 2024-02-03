@@ -5,6 +5,7 @@ class Node(BaseModel):
     id: int
     label: str
     color: str
+    wikipedia_url: str = ''
 
 class Edge(BaseModel):
     source: int
@@ -15,4 +16,5 @@ class Edge(BaseModel):
 class KnowledgeGraph(BaseModel):
     nodes: List[Node] = Field(..., default_factory=list)
     edges: List[Edge] = Field(..., default_factory=list)
+
 

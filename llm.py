@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 # Adds response_model to ChatCompletion
 # Allows the return of Pydantic model rather than raw JSON
 client = instructor.patch(OpenAI())
